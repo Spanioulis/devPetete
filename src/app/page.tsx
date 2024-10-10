@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { MusicIcon } from "@/components/icons";
 
 export default function Home() {
 	return (
@@ -17,8 +18,13 @@ export default function Home() {
 						<Link href="/" className="hover:text-crimson">
 							Animaciones
 						</Link>
-						<Link href="https://musicforprogramming.net/latest/" className="hover:text-crimson">
-							Música
+						<Link
+							href="https://musicforprogramming.net/latest/"
+							target="_blank"
+							className="hover:text-crimson"
+						>
+							<MusicIcon size={24} className="text-crimson inline mx-2" />
+							musicforprogramming.net
 						</Link>
 					</ul>
 				</nav>
