@@ -12,6 +12,7 @@ const config: Config = {
 				background: "var(--background)",
 				foreground: "var(--foreground)",
 				crimson: "#c34",
+				dodgerBlue: "#09f",
 			},
 		},
 	},
