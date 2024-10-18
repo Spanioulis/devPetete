@@ -1,6 +1,6 @@
 export default function Home() {
 	return (
-		<main className="p-10 p-sm-6 text-balance">
+		<main className="p-10 p-sm-6 text-balance bg-main">
 			<section>
 				<h2 className="text-2xl font-bold">¿Qué es esto?</h2>
 				<p className="text-xl">

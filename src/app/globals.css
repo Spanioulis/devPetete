@@ -5,11 +5,13 @@
 :root {
   --background: #ffffff;
   --foreground: #141924;
+  --main: #17181C;
 }
+
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #141924;
+    --background: #24262F;
     --foreground: #ededed;
   }
 }
@@ -26,7 +28,7 @@ body {
   grid-template-rows: auto 1fr auto;
 
   >* {
-    border-bottom: 1px solid #c34
+    border-bottom: 1px solid var(--main);
   }
 }
 
@@ -48,7 +50,7 @@ main {
 
 aside {
   grid-area: aside;
-  border-right: 1px solid #c34;
+  border-right: 1px solid var(--main);
 }
 
 footer {

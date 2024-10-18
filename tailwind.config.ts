@@ -13,6 +13,7 @@ const config: Config = {
 				foreground: "var(--foreground)",
 				crimson: "#c34",
 				dodgerBlue: "#09f",
+				main: "#17181C",
 			},
 		},
 	},

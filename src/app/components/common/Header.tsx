@@ -5,11 +5,10 @@ import MusicIcon from "@/components/icons/MusicIcon";
 
 export default function Header() {
 	return (
-		<header className="flex justify-between items-center w-full p-4">
+		<header className="flex justify-between items-center w-full p-4 bg-background">
 			<Link href="/">
-				<h1 className="text-5xl font-bold flex items-center gap-2">
-					<Book size={48} className="inline text-dodgerBlue" />{" "}
-					<span className="text-crimson">devPetete</span>
+				<h1 className="text-5xl font-bold flex items-center gap-2 text-crimson">
+					<Book size={48} className="inline" /> <span>devPetete</span>
 				</h1>
 				<p className="text-2xl">Un sinfín devRecursos...</p>
 			</Link>
