@@ -4,12 +4,12 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #1b1b1f;
+  --foreground: #141924;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #1b1b1f;
+    --background: #141924;
     --foreground: #ededed;
   }
 }
@@ -18,10 +18,49 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+
+
+  display: grid;
+  grid-template-areas: 'header header' 'aside main' 'footer footer';
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr auto;
+
+  >* {
+    border-bottom: 1px solid #c34
+  }
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+header {
+  grid-area: header;
+
+}
+
+main {
+  grid-area: main;
+  width: 100%;
+}
+
+aside {
+  grid-area: aside;
+  border-right: 1px solid #c34;
+}
+
+footer {
+  grid-area: footer;
+  border-bottom: none;
+
+  a {
+    background-image: url('./assets/images/button-bg.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    padding: 10px 40px;
   }
 }

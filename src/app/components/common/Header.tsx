@@ -5,15 +5,16 @@ import MusicIcon from "@/components/icons/MusicIcon";
 
 export default function Header() {
 	return (
-		<header className="flex justify-between items-center w-full">
-			<div>
+		<header className="flex justify-between items-center w-full p-4">
+			<Link href="/">
 				<h1 className="text-5xl font-bold flex items-center gap-2">
 					<Book size={48} className="inline text-dodgerBlue" />{" "}
 					<span className="text-crimson">devPetete</span>
 				</h1>
 				<p className="text-2xl">Un sinfín devRecursos...</p>
-			</div>
+			</Link>
 
+			{/* Crear componente Navbar.tsx en components/layout, junto con el Footer.tsx */}
 			<nav>
 				<ul className="flex gap-4">
 					<Link href="/performance" className="hover:text-crimson">
